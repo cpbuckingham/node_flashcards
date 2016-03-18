@@ -1,0 +1,8 @@
+.bem/cache/
+.bem/snapshots/
+node_modules/
+libs/
+
+/*.examples
+/*.specs
+/*.tests

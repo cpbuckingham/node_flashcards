@@ -1,0 +1,35 @@
+{
+    "name": "bem-history",
+    "version": "2.0.0",
+    "description": "BEM wrap for History API",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/bem/bem-history.git"
+    },
+    "keywords": [
+        "bem",
+        "history",
+        "history api"
+    ],
+    "engines": {
+      "node": ">= 0.10.0"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bem-environ": "~1.4.0"
+    },
+    "devDependencies": {
+        "bem": "~0.8.1",
+        "git-hooks": "~0.0.6",
+        "jscs": "~1.5.3",
+        "jshint-groups": "0.6.0",
+        "bower-npm-install": "~0.5.4"
+    },
+    "private": true,
+    "scripts": {
+        "deps": "bower-npm-install",
+        "bem-test": "bem make sets",
+        "lint": "jshint-groups && jscs .",
+        "test": "npm run lint && npm run deps && npm run bem-test"
+    }
+}
